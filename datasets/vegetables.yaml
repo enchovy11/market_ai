@@ -1,0 +1,23 @@
+path: ./datasets/vegetables
+train: images/train
+val: images/val
+test: images/test
+
+nc: 15
+
+names:
+  0: lettuce
+  1: cabbage
+  2: tomato
+  3: potato
+  4: sweet_potato
+  5: carrot
+  6: onion
+  7: cucumber
+  8: pumpkin
+  9: pepper
+  10: garlic
+  11: green_onion
+  12: broccoli
+  13: spinach
+  14: radish

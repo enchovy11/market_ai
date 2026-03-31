@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.env
+venv/
+.venv/
+
+# 학습 관련 (용량 큰 파일)
+runs/
+*.pt
+*.onnx
+*.tflite
+*.torchscript
+
+# 데이터셋 (용량 큼 - 별도 관리)
+datasets/vegetables/images/
+datasets/vegetables/labels/
+raw_images/
+
+# OS
+.DS_Store
+Thumbs.db
