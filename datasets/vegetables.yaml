@@ -3,21 +3,32 @@ train: images/train
 val: images/val
 test: images/test
 
-nc: 15
+nc: 26
 
 names:
-  0: lettuce
-  1: cabbage
-  2: tomato
-  3: potato
-  4: sweet_potato
-  5: carrot
-  6: onion
-  7: cucumber
-  8: pumpkin
-  9: pepper
-  10: garlic
-  11: green_onion
-  12: broccoli
-  13: spinach
-  14: radish
+  0: avocado
+  1: beans
+  2: beet
+  3: bell pepper
+  4: broccoli
+  5: brus capusta
+  6: cabbage
+  7: carrot
+  8: cayliflower
+  9: celery
+  10: corn
+  11: cucumber
+  12: eggplant
+  13: fasol
+  14: garlic
+  15: hot pepper
+  16: onion
+  17: peas
+  18: potato
+  19: pumpkin
+  20: rediska
+  21: redka
+  22: salad
+  23: squash-patisson
+  24: tomato
+  25: vegetable marrow

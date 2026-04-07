@@ -14,30 +14,41 @@ from pathlib import Path
 from ultralytics import YOLO
 
 # ===== 설정 =====
-MODEL_PATH   = "./runs/vegetables_v1/weights/best.pt"
+MODEL_PATH   = "./runs/vegetables_26classes2/weights/best.pt"
 DATASET_YAML = "./datasets/vegetables.yaml"
 TEST_IMG_DIR = "./datasets/vegetables/images/test"
-RESULT_DIR   = "./runs/evaluation"
+RESULT_DIR   = "./runs/evaluation_26"
 CONF_THRESH  = 0.5  # 신뢰도 임계값
 # ================
 
 # 클래스 한국어 이름
 CLASS_NAMES_KR = {
-    "lettuce":      "상추",
-    "cabbage":      "배추",
-    "tomato":       "토마토",
-    "potato":       "감자",
-    "sweet_potato": "고구마",
-    "carrot":       "당근",
-    "onion":        "양파",
-    "cucumber":     "오이",
-    "pumpkin":      "호박",
-    "pepper":       "고추",
-    "garlic":       "마늘",
-    "green_onion":  "파",
-    "broccoli":     "브로콜리",
-    "spinach":      "시금치",
-    "radish":       "무",
+    "avocado": "아보카도",
+    "beans": "콩",
+    "beet": "비트",
+    "bell pepper": "피망",
+    "broccoli": "브로콜리",
+    "brus capusta": "방울양배추",
+    "cabbage": "배추",
+    "carrot": "당근",
+    "cayliflower": "콜리플라워",
+    "celery": "샐러리",
+    "corn": "옥수수",
+    "cucumber": "오이",
+    "eggplant": "가지",
+    "fasol": "강낭콩",
+    "garlic": "마늘",
+    "hot pepper": "매운고추",
+    "onion": "양파",
+    "peas": "완두콩",
+    "potato": "감자",
+    "pumpkin": "호박",
+    "rediska": "래디시(무)",
+    "redka": "무",
+    "salad": "상추",
+    "squash-patisson": "패티슨호박",
+    "tomato": "토마토",
+    "vegetable marrow": "애호박",
 }
 
 

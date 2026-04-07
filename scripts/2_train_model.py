@@ -12,12 +12,12 @@ from ultralytics import YOLO
 MODEL_SIZE   = "yolov8n"   # n(빠름), s, m, l, x(정확) 중 선택
 EPOCHS       = 100         # 학습 반복 수 (데이터 적으면 50, 많으면 150)
 IMG_SIZE     = 640         # 입력 이미지 크기
-BATCH_SIZE   = 16          # 배치 사이즈 (GPU 메모리에 따라 조절: VRAM 4GB=8, 8GB=16)
+BATCH_SIZE   = 8           # 배치 사이즈 (VRAM 8GB → 8로 조정)
 PATIENCE     = 20          # 조기 종료 (성능 개선 없으면 N epoch 후 중단)
 DEVICE       = "0" if torch.cuda.is_available() else "cpu"  # GPU 자동 감지
 DATASET_YAML = "./datasets/vegetables.yaml"
 PROJECT_DIR  = "./runs"
-RUN_NAME     = "vegetables_v1"
+RUN_NAME     = "vegetables_26classes"
 # =====================
 
 
@@ -87,7 +87,7 @@ def train():
         plots=True,           # 학습 그래프 저장
         augment=True,         # 데이터 증강
         cache=False,          # 메모리 캐싱 (RAM 16GB 이상이면 True)
-        workers=4,
+        workers=0,            # Windows 환경 멈춤 방지를 위해 0으로 설정
         verbose=True,
     )
 

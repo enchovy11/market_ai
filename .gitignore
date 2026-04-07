@@ -1,23 +1,24 @@
 # Python
 __pycache__/
 *.py[cod]
-*.egg-info/
+*$py.class
+*.so
+
+# Environment
 .env
+.venv
+env/
 venv/
-.venv/
+ENV/
+env.bak/
+venv.bak/
 
-# 학습 관련 (용량 큰 파일)
+# Project specifics
+datasets/
 runs/
-*.pt
-*.onnx
-*.tflite
-*.torchscript
+!runs/vegetables_26classes2/weights/best.pt  # 최종 학습 모델 가중치 파일 예외 처리 (Git에 업로드)
 
-# 데이터셋 (용량 큼 - 별도 관리)
-datasets/vegetables/images/
-datasets/vegetables/labels/
-raw_images/
-
-# OS
+# IDE / OS
+.vscode/
+.idea/
 .DS_Store
-Thumbs.db
