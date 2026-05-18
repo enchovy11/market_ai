@@ -31,7 +31,7 @@ def export_all():
         model.export(
             format="onnx",
             imgsz=IMG_SIZE,
-            dynamic=True,   # 동적 입력 크기 지원
+            dynamic=False,  # 고정 크기 (640x640) — 안드로이드 ONNX Runtime 호환성 향상
             simplify=True,
         )
         print("    완료: best.onnx")
